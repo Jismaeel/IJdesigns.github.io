@@ -977,6 +977,11 @@ input[type="range"]:active::-webkit-slider-thumb {
   margin-bottom: 1rem;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .my-\[5px\] {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -1288,10 +1293,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 .h-screen {
   height: 100vh;
-}
-
-.max-h-14 {
-  max-height: 3.5rem;
 }
 
 .max-h-\[calc\(100\%-64px\)\] {
@@ -2331,13 +2332,13 @@ input[type="range"]:active::-webkit-slider-thumb {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.from-30\% {
-  --tw-gradient-from-position: 30%;
+.from-20\% {
+  --tw-gradient-from-position: 20%;
 }
 
-.via-black {
-  --tw-gradient-to: rgb(0 0 0 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), #000 var(--tw-gradient-via-position), var(--tw-gradient-to);
+.via-purple-800 {
+  --tw-gradient-to: rgb(107 33 168 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #6b21a8 var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 
 .via-60\% {
@@ -4804,10 +4805,6 @@ input[type="range"]:active::-webkit-slider-thumb {
 @media (min-width: 640px) {
   .sm\:block {
     display: block;
-  }
-
-  .sm\:hidden {
-    display: none;
   }
 }
 
