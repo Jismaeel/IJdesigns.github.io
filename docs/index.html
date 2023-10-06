@@ -11,14 +11,14 @@
   <link rel="stylesheet" href="main.min.css"> <!-- Link to your Tailwind CSS file -->
 </head>
 
-<body class="bg-">
+<body class="">
 
-    <header class="bg-gradient-to-b from-blue-950 from-20% via-purple-800 via-60% text-white py-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="py-2 px-2 text-lg lg:text-2xl font-bold">Ismaeel Jansen - Graphic Designer</h1>
+    <header class="bg-gradient-to-b from-blue-950 from-20% via-sky-600 via-60% text-white py-4">
+        <div class="flex flex-no-wrap my-5 mx-10 justify-between">
+            <h1 class="text-lg lg:text-2xl font-bold text-center">Ismaeel Jansen - Graphic Designer</h1>
             <nav>
                 <ul class="flex px-4 space-x-4">
-                  <li><a href="#" class="hover:text-gray-300 hidden sm:block">Home</a></li>
+                  <li><a href="#" class="hover:text-gray-300 hidden sm:block">About</a></li>
                   <li><a href="#portfolio" class="hover:text-gray-300 hidden sm:block">Portfolio</a></li>
                   <li><a href="#contact" class="hover:text-gray-300 hidden sm:block">Contact</a></li>
                 </ul>
@@ -26,19 +26,55 @@
         </div>
      
         <section class="hero text-white py-20">
-          <div class="container mx-auto flex flex-col items-center">
+          <div class="container mx-auto flex flex-col items-center ">
               <!-- Avatar -->
-              <img src="https://mdbcdn.b-cdn.net/img/new/avatars/1.webp" class="w-32 rounded-full shadow-lg" alt="Avatar" />
-      
+              <div class="mx=12 flex w-40 h-40 rounded-full overflow-hidden bg-gray-300">
+              <img src="../docs/img/avater.png" class="w-full h-full object-cover object-center shadow-lg mb-4" alt="Avatar" />
+            </div>
               <!-- Welcome Message -->
               <h1 class="text-2xl lg:text-4xl hover:text-gray-300 font-bold text-shadow-lg shadow-black/20  mb-4">Welcome to My Portfolio</h1>
-              <p class="text-lg mb-8 text-center hover:text-gray-300 font-bold text-shadow-lg">I'm Ismaeel Jansen,a passionate graphic designer and social media coordinator, dedicated to bringing creative visions to life through visually appealing designs. With a keen eye for aesthetics and a strong grasp of digital marketing strategies, I specialize in crafting compelling visual content that resonates with audiences. </p>
       
               <!-- Call to Action Button -->
               <a href="#portfolio" class="bg-white text-blue-500 hover:bg-blue-700 hover:text-white py-2 px-6 rounded-full text-lg font-semibold transition duration-300">View My Work</a>
           </div>
       </section>
     </header>
+
+
+<section class="mb-32 text-center lg:text-left">
+    <style>
+      @media (min-width: 992px) {
+        .rotate-lg-6 {
+          transform: rotate(6deg);
+        }
+      }
+  
+      /* These are the KEY styles - you can add them directly to any object you want in your project */
+      .fancy-border-radius {
+        border-radius: 53% 47% 52% 48% / 36% 41% 59% 64%;
+      }
+    </style>
+  
+    <!-- Jumbotron -->
+    <div class="container mx-auto  text-center lg:text-center xl:px-32">
+      <div class="grid items-center lg:grid-cols-2">
+        <div class="mb-12 lg:mb-0">
+          <div
+            class="relative z-[1] block rounded-lg bg-[hsla(0,0%,100%,0.55)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 md:px-12 lg:-mr-14 backdrop-blur-[30px]">
+            <h2 class="mb-6 text-4xl font-bold">About</h2>
+            <p class="text-lg mb-8 text-center hover:text-gray-300 font-bold text-shadow-lg">I'm Ismaeel Jansen,a passionate graphic designer and social media coordinator, dedicated to bringing creative visions to life through visually appealing designs. With a keen eye for aesthetics and a strong grasp of digital marketing strategies, I specialize in crafting compelling visual content that resonates with audiences. </p>
+          </div>
+        </div>
+  
+        <div>
+          <img src="https://tecdn.b-cdn.net/img/new/ecommerce/vertical/088.jpg"
+            class="fancy-border-radius rotate-lg-6 w-full shadow-lg dark:shadow-black/20" alt="" loading="lazy" />
+        </div>
+      </div>
+    </div>
+    <!-- Jumbotron -->
+  </section>
+
 
     <div id="accordionExample">
         <h1 class="text-4xl my-5 font-bold text-black text-center">Portfolio</h1>
@@ -88,7 +124,7 @@
         }
       </style>
   
-      <h2 class="mb-12 text-center text-3xl font-bold">
+      <h2 class="flex-no-wrap my-5 text-center text-lg lg:text-4xl font-bold">
         Projects done for SkylasDriving School
       </h2>
   
