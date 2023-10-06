@@ -1,136 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ismaeel's Graphic portfolio</title>
-        <!-- SEO Meta Tags -->
-        <meta name="description" content="Ismaeel Jansen - Graphic Design Portfolio">
-        <meta name="author" content="Ismaeel Jansen">
-        <link rel="stylesheet" href="main.min.css"> <!-- Link to your Tailwind CSS file -->
-    </head>
 
-    <body class="bg-gray-100">
-        <!-- Navigation -->
-        <nav
-  class="flex-no-wrap relative flex w-full items-center justify-between bg-[#FBFBFB] py-2 shadow-md shadow-black/5 dark:bg-neutral-600 dark:shadow-black/10 lg:flex-wrap lg:justify-start lg:py-4">
-  <div class="flex w-full flex-wrap items-center justify-between px-3">
-    <!-- Collapsible navigation container -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ismaeel's Graphic portfolio</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Ismaeel Jansen - Graphic Design Portfolio">
+  <meta name="author" content="Ismaeel Jansen">
+  <link rel="stylesheet" href="main.min.css"> <!-- Link to your Tailwind CSS file -->
+</head>
+
+<body class="bg-">
+
+    <header class="bg-gradient-to-b from-blue-950 from-30% via-black via-60% text-white py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="py-4 px-6 text-lg lg:text-2xl font-bold">Ismaeel Jansen - Graphic Designer</h1>
+            <nav>
+                <ul class="flex px-4 space-x-4">
+                  <li><img src="../docs/img/ij tr.png" class="block sm:hidden max-w-14 max-h-14"></li>
+                  <li><a href="#" class="hover:text-gray-300 hidden sm:block">Home</a></li>
+                  <li><a href="#portfolio" class="hover:text-gray-300 hidden sm:block">Portfolio</a></li>
+                  <li><a href="#contact" class="hover:text-gray-300 hidden sm:block">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+     
+        <section class="hero text-white py-20">
+          <div class="container mx-auto flex flex-col items-center">
+              <!-- Avatar -->
+              <img src="https://mdbcdn.b-cdn.net/img/new/avatars/1.webp" class="w-32 rounded-full shadow-lg" alt="Avatar" />
+      
+              <!-- Welcome Message -->
+              <h1 class="text-2xl lg:text-4xl hover:text-gray-300 font-bold text-shadow-lg shadow-black/20  mb-4">Welcome to My Portfolio</h1>
+              <p class="text-lg mb-8 text-center hover:text-gray-300 font-bold text-shadow-lg">I'm Ismaeel Jansen,a passionate graphic designer and social media coordinator, dedicated to bringing creative visions to life through visually appealing designs. With a keen eye for aesthetics and a strong grasp of digital marketing strategies, I specialize in crafting compelling visual content that resonates with audiences. </p>
+      
+              <!-- Call to Action Button -->
+              <a href="#portfolio" class="bg-white text-blue-500 hover:bg-blue-700 hover:text-white py-2 px-6 rounded-full text-lg font-semibold transition duration-300">View My Work</a>
+          </div>
+      </section>
+    </header>
+
+    <div id="accordionExample">
+        <h1>Portfolio</h1>
     <div
-      class=" flex-grow basis-[100%] items-center lg:!flex lg:basis-auto"
-      id="navbarSupportedContent1"
-      data-te-collapse-item>
-      <!-- Logo -->
-      <a
-        class="mb-4 ml-2 mr-5 mt-3 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:mb-0 lg:mt-0"
-        href="#">
-        <img
-          src="https://tecdn.b-cdn.net/img/logo/te-transparent-noshadows.webp"
-          style="height: 15px"
-          alt="TE Logo"
-          loading="lazy" />
-      </a>
-      <!-- Left navigation links -->
-      <ul
-        class=" list-style-none mr-auto flex flex-col pl-0 lg:flex-row sm:"
-        data-te-navbar-nav-ref>
-        <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-        <!-- Team link -->
-        <li class=" Invisible mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-          <a
-            class=" text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-            href="#"
-            data-te-nav-link-ref
-            >About Ismaeel</a
-          >
-        </li>
-        <!-- Projects link -->
-        <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
-          <a
-            class="text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-            href="#"
-            data-te-nav-link-ref
-            >Projects</a
-          >
-        </li>
-      </ul>
-    </div>
-
-    <!-- Right elements -->
-    <div class="relative flex items-center">
-      <!-- Second dropdown container -->
+      class="rounded-t-lg border border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
+      <h2 class="mb-0" id="headingOne">
+        <button
+          class="group relative flex w-full items-center rounded-t-[15px] bg-white px-5 py-4 text-left text-bold text-black transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+          type="button"
+          data-te-collapse-init
+          data-te-target="#collapseOne"
+          aria-expanded="true"
+          aria-controls="collapseOne">
+          SKYLAS DRIVING SCHOOL
+          <span
+            class="ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-6 w-6">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+          </span>
+        </button>
+      </h2>
       <div
-        class="relative"
-        data-te-dropdown-ref
-        data-te-dropdown-alignment="end">
-        <!-- Second dropdown trigger -->
-        <a
-          class="hidden-arrow flex items-center whitespace-nowrap transition duration-150 ease-in-out motion-reduce:transition-none"
-          href="#"
-          id="dropdownMenuButton2"
-          role="button"
-          data-te-dropdown-toggle-ref
-          aria-expanded="false">
-          <!-- User avatar -->
-          <img
-            src="https://tecdn.b-cdn.net/img/new/avatars/2.jpg"
-            class="rounded-full"
-            style="height: 25px; width: 25px"
-            alt=""
-            loading="lazy" />
-        </a>
+        id="collapseOne"
+        class="!visible"
+        data-te-collapse-item
+        data-te-collapse-show
+        aria-labelledby="headingOne"
+        data-te-parent="#accordionExample">
+        <div class="px-5 py-4">
+          <!-- Container for demo purpose -->
+<div class="container my-24 mx-auto md:px-6">
+    <!-- Section: Design Block -->
+    <section class="mb-32">
+      <style>
+        .zoom:hover img {
+          transform: scale(1.1);
+        }
+      </style>
+  
+      <h2 class="mb-12 text-center text-3xl font-bold">
+        Projects done for SkylasDriving School
+      </h2>
+  
+      <div class="grid gap-6 lg:grid-cols-3">
+        <div
+          class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%]"
+          data-te-ripple-init data-te-ripple-color="dark">
+          <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.jpg"
+            class="w-full align-middle transition duration-300 ease-linear" />
+          <a href="#!">
+            <div
+              class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0.3)]">
+              <div class="flex h-full items-end justify-start">
+                <h5 class="m-6 text-lg font-bold text-white">
+                  Hollywood exhibition
+                </h5>
+              </div>
+            </div>
+            <div>
+              <div
+                class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,99.2%,0.15)]">
+              </div>
+            </div>
+          </a>
+        </div>
+  
+        <div
+          class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%]"
+          data-te-ripple-init data-te-ripple-color="dark">
+          <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/044.jpg"
+            class="w-full align-middle transition duration-300 ease-linear" />
+          <a href="#!">
+            <div
+              class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0.3)]">
+              <div class="flex h-full items-end justify-start">
+                <h5 class="m-6 text-lg font-bold text-white">Genius Loci</h5>
+              </div>
+            </div>
+            <div>
+              <div
+                class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,99.2%,0.15)]">
+              </div>
+            </div>
+          </a>
+        </div>
+  
+        <div
+          class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%]"
+          data-te-ripple-init data-te-ripple-color="dark">
+          <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/045.jpg"
+            class="w-full align-middle transition duration-300 ease-linear" />
+          <a href="#!">
+            <div
+              class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0.3)]">
+              <div class="flex h-full items-end justify-start">
+                <h5 class="m-6 text-lg font-bold text-white">Big Apple</h5>
+              </div>
+            </div>
+            <div>
+              <div
+                class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,99.2%,0.15)]">
+              </div>
+            </div>
+          </a>
+        </div>
+  
+        <div
+          class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%]"
+          data-te-ripple-init data-te-ripple-color="dark">
+          <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/047.jpg"
+            class="w-full align-middle transition duration-300 ease-linear" />
+          <a href="#!">
+            <div
+              class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0.3)]">
+              <div class="flex h-full items-end justify-start">
+                <h5 class="m-6 text-lg font-bold text-white">Sun City</h5>
+              </div>
+            </div>
+            <div>
+              <div
+                class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,99.2%,0.15)]">
+              </div>
+            </div>
+          </a>
+        </div>
+  
+        <div
+          class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%]"
+          data-te-ripple-init data-te-ripple-color="dark">
+          <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/048.jpg"
+            class="w-full align-middle transition duration-300 ease-linear" />
+          <a href="#!">
+            <div
+              class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0.3)]">
+              <div class="flex h-full items-end justify-start">
+                <h5 class="m-6 text-lg font-bold text-white">Paris flavor</h5>
+              </div>
+            </div>
+            <div>
+              <div
+                class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,99.2%,0.15)]">
+              </div>
+            </div>
+          </a>
+        </div>
+  
+        <div
+          class="zoom relative overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20 bg-[50%]"
+          data-te-ripple-init data-te-ripple-color="dark">
+          <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/049.jpg"
+            class="w-full align-middle transition duration-300 ease-linear" />
+          <a href="#!">
+            <div
+              class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed bg-[hsla(0,0%,0%,0.3)]">
+              <div class="flex h-full items-end justify-start">
+                <h5 class="m-6 text-lg font-bold text-white">
+                  Sky is the limit
+                </h5>
+              </div>
+            </div>
+            <div>
+              <div
+                class="mask absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,99.2%,0.15)]">
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Section: Design Block -->
+  </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
+      <h2 class="mb-0" id="headingTwo">
+        <button
+          class="group relative flex w-full items-center rounded-none border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)]"
+          type="button"
+          data-te-collapse-init
+          data-te-collapse-collapsed
+          data-te-target="#collapseTwo"
+          aria-expanded="false"
+          aria-controls="collapseTwo">
+          Accordion Item #2
+          <span
+            class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-6 w-6">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+          </span>
+        </button>
+      </h2>
+      <div
+        id="collapseTwo"
+        class="!visible hidden"
+        data-te-collapse-item
+        aria-labelledby="headingTwo"
+        data-te-parent="#accordionExample">
+        <div class="px-5 py-4">
+          <strong>This is the second item's accordion body.</strong> It is
+          hidden by default, until the collapse plugin adds the appropriate
+          classes that we use to style each element. These classes control
+          the overall appearance, as well as the showing and hiding via CSS
+          transitions. You can modify any of this with custom CSS or
+          overriding our default variables. It's also worth noting that just
+          about any HTML can go within the <code>.accordion-body</code>,
+          though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+    <div
+      class="rounded-b-lg border border-t-0 border-neutral-200 bg-white dark:border-neutral-600 dark:bg-neutral-800">
+      <h2 class="accordion-header mb-0" id="headingThree">
+        <button
+          class="group relative flex w-full items-center border-0 bg-white px-5 py-4 text-left text-base text-neutral-800 transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none dark:bg-neutral-800 dark:text-white [&:not([data-te-collapse-collapsed])]:bg-white [&:not([data-te-collapse-collapsed])]:text-primary [&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(229,231,235)] dark:[&:not([data-te-collapse-collapsed])]:bg-neutral-800 dark:[&:not([data-te-collapse-collapsed])]:text-primary-400 dark:[&:not([data-te-collapse-collapsed])]:[box-shadow:inset_0_-1px_0_rgba(75,85,99)] [&[data-te-collapse-collapsed]]:rounded-b-[15px] [&[data-te-collapse-collapsed]]:transition-none"
+          type="button"
+          data-te-collapse-init
+          data-te-collapse-collapsed
+          data-te-target="#collapseThree"
+          aria-expanded="false"
+          aria-controls="collapseThree">
+          Accordion Item #3
+          <span
+            class="-mr-1 ml-auto h-5 w-5 shrink-0 rotate-[-180deg] fill-[#336dec] transition-transform duration-200 ease-in-out group-[[data-te-collapse-collapsed]]:mr-0 group-[[data-te-collapse-collapsed]]:rotate-0 group-[[data-te-collapse-collapsed]]:fill-[#212529] motion-reduce:transition-none dark:fill-blue-300 dark:group-[[data-te-collapse-collapsed]]:fill-white">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-6 w-6">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+          </span>
+        </button>
+      </h2>
+      <div
+        id="collapseThree"
+        class="!visible hidden"
+        data-te-collapse-item
+        aria-labelledby="headingThree"
+        data-te-parent="#accordionExample">
+        <div class="px-5 py-4">
+          <strong>This is the third item's accordion body.</strong> It is
+          hidden by default, until the collapse plugin adds the appropriate
+          classes that we use to style each element. These classes control
+          the overall appearance, as well as the showing and hiding via CSS
+          transitions. You can modify any of this with custom CSS or
+          overriding our default variables. It's also worth noting that just
+          about any HTML can go within the <code>.accordion-body</code>,
+          though the transition does limit overflow.
+        </div>
       </div>
     </div>
   </div>
-</nav>
 
-        <!-- Hero Section -->
-        <section id="hero" class="bg-blue-900 text-white py-16">
-            <div class="container mx-auto text-center">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold">Hello, I'm John Doe</h2>
-                <p class="mt-4 text-lg md:text-xl lg:text-2xl">A passionate software developer.</p>
-                <a href="#contact" class="mt-8 inline-block bg-yellow-400 text-blue-900 hover:bg-yellow-300 py-2 px-4 rounded-full transition duration-300 ease-in-out">Contact Me</a>
-            </div>
-        </section>
+    
 
-        <!-- About Section -->
-        <section id="about" class="py-16">
-            <div class="container mx-auto text-center">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold">About Me</h2>
-                <p class="mt-4 max-w-2xl mx-auto text-lg">I am a skilled software developer with a passion for creating innovative solutions. I have expertise in...</p>
-            </div>
-        </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="bg-gray-200 py-16">
-            <div class="container mx-auto text-center">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold">Projects</h2>
-                <!-- Add your project cards here -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
-                    <!-- Example project card -->
-                    <div class="bg-white shadow-lg rounded-lg p-4">
-                        <h3 class="text-xl md:text-2xl lg:text-3xl font-semibold">Project Name</h3>
-                        <p class="mt-2 text-base md:text-lg lg:text-xl">Description of the project...</p>
-                        <a href="#" class="mt-4 inline-block bg-blue-500 text-white hover:bg-blue-400 py-2 px-4 rounded-full transition duration-300 ease-in-out">Learn More</a>
-                    </div>
-                    <!-- Add more project cards as needed -->
-                </div>
-            </div>
-        </section>
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023@Ismaeel Jansen. All rights reserved.</p>
+        </div>
+    </footer>
 
-        <!-- Contact Section -->
-        <section id="contact" class="bg-blue-900 text-white py-16">
-            <div class="container mx-auto text-center">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold">Contact Me</h2>
-                <p class="mt-4 max-w-md mx-auto text-lg">Feel free to get in touch with me. You can reach me at <a href="mailto:john@example.com">john@example.com</a>.</p>
-            </div>
-        </section>
+    <script
+  type="text/javascript"
+  src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
 
-        <!-- Footer -->
-        <footer class="bg-gray-800 text-white py-4">
-            <div class="container mx-auto text-center">
-                &copy; 2023 Developer Portfolio
-            </div>
-        </footer>
-    </body>
+</body>
+
 </html>
