@@ -7,7 +7,6 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [require("tw-elements/dist/plugin.cjs")],
+  plugins: [require("./node_modules/tw-elements/dist/plugin.cjs")],
   dark:"class"
 }
-
