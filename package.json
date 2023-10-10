@@ -4,7 +4,6 @@
     "minify:css": "minify deploy/css/main.css > docs/main.min.css",
     "build:css": "npm run compile:css && npm run minify:css"
   },
-  
   "dependencies": {
     "autoprefixer": "^10.4.16",
     "minify": "^10.5.2",
@@ -13,4 +12,3 @@
     "tw-elements": "^1.0.0"
   }
 }
-
