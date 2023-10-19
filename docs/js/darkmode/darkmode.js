@@ -32,3 +32,4 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
   themeSwitcherItems.forEach((item) => {
     item.addEventListener("click", onThemeSwitcherItemClick);
   });
+
