@@ -24,8 +24,12 @@
 
 <body class="flex items-center justify-center min-h-screen dark:bg-neutral-800">
 
+  <div id="spinner" class="inline-block h-12 w-12 animate-[spinner-grow_0.75s_linear_infinite] rounded-full bg-current align-[-0.125em] opacity-0 motion-reduce:animate-[spinner-grow_1.5s_linear_infinite]" role="status">
+  <p
+    class="!absolute !-m-px !h-px !w-px !text-current !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+    >Loading...</p>
+  </div>
 
-    <div id="spinner" class="spinner border-t-4 border-blue-500 border-solid h-12 w-12 rounded-full animate-spin"></div>
   
 <div id="content" class="hidden">
 <!-- mode -->
@@ -338,7 +342,7 @@
 <!-- SVG Background -->
 
 <!-- Jumbotron -->
-<div class="px-6 py-28 text-center md:px-12 lg:text-left">
+<div class="px-6 py-2 lg:py-28 text-center md:px-12 lg:text-left">
   <div class="w-100 mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl xl:px-32">
     <div class="grid items-center lg:grid-cols-2">
       <div class="mb-12 md:mt-12 lg:mt-0 lg:mb-0">
@@ -443,27 +447,33 @@
   <h4 id="P!" class="text-center mb-10 mt-10 text-5xl font-bold drop-shadow-xl text-black dark:text-white">
     Projects
   </h4>
+
 <div
   data-te-lightbox-init
-  class="flex flex-col space-y-5 lg:flex-row lg:space-x-5 lg:space-y-0">
+  class="flex flex-col space-y-5 lg:flex-row lg:space-x-5 lg:space-y-0 " >
   <div class="flex h-full w-full flex-1 flex-col">
     <img
       src="./img/hairtopia-01.png"
       data-te-img="./img/hairtopia-01.png"
       alt="hairtopia-01"
-      class="mb-5 w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto" />
+      class="mb-5 w-full rounded-lg cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto" />
     <img
       src="./img/ppa logo-01.png"
       data-te-img="./img/ppa logo-01.png"
       alt="ppa logo-01.png"
-      class="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto" />
+      class="w-full  rounded-lg cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto" />
   </div>
   <div class="flex h-full w-full flex-1 flex-col">
     <img
       src="./img/86.jpg"
       data-te-img="./img/86.jpg"
       alt="hairtopia-01 poster Design"
-      class="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto" />
+      class="mb-5 w-full  rounded-lg cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto" />
+    <img
+      src="./img/mockup111111.png"
+      data-te-img="./img/mockup111111.png"
+      alt="mockup Design"
+      class="w-full rounded-lg cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto" />
   </div>
 </div>
 </section>
@@ -478,7 +488,7 @@
 <!-- Contact details -->
 <section class="container mx-auto">
 
-  <h4 class="text-center mb-10 mt-10 text-5xl font-bold leading-tight text-black dark:text-white">
+  <h4 class="text-center mb-10 mt-10 text-4xl lg:text-5xl font-bold leading-tight text-black dark:text-white">
     Contact Details
   </h4>
 
@@ -646,34 +656,10 @@
   type="text/javascript"
   src="./js/darkmode/darkmode.js"></script>
 
-  <script>
-    // Function to show the spinner
-    function showSpinner() {
-        document.getElementById('spinner').classList.remove('hidden');
-    }
+  <script
+  type="text/javascript"
+  src="./js/spinner/spinnerjs.js"></script>
 
-    // Function to hide the spinner and show the content
-    function hideSpinnerAndShowContent() {
-        document.getElementById('spinner').classList.add('hidden');
-        document.getElementById('content').classList.remove('hidden');
-    }
-
-    // Simulate an asynchronous operation (e.g., fetching data)
-    function simulateAsyncOperation() {
-        showSpinner();
-
-        // Simulate a delay (replace this with your actual async operation)
-        setTimeout(function () {
-            hideSpinnerAndShowContent();
-        }, 2000); // Change 2000 to your desired delay in milliseconds
-    }
-
-    // Call the function to start the process
-    simulateAsyncOperation();
-</script>
-
-
- 
 
 </body>
 
