@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ismaeel's Graphic Portfolio</title>
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Ismaeel Jansen - Graphic Design Portfolio">
+  <meta name="description" content="Draphic designer">
   <meta name="author" content="Ismaeel Jansen">
   <link rel="stylesheet" href="main.min.css"> <!-- Link to your Tailwind CSS file -->
 
@@ -16,22 +16,39 @@
   href="./img/logo2-01 tabs-02.png"
   type="image/x-icon" />
 
+  <style>
+    .video-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+      opacity: 20%;
+    }
+    /* Style for video element */
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+
 
 </head>
 
 
-
-
 <body class="flex items-center justify-center min-h-screen dark:bg-neutral-800">
 
-  <div id="spinner" class="inline-block h-12 w-12 animate-[spinner-grow_0.75s_linear_infinite] rounded-full bg-current align-[-0.125em] opacity-0 motion-reduce:animate-[spinner-grow_1.5s_linear_infinite]" role="status">
-  <p
-    class="!absolute !-m-px !h-px !w-px !text-current !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-    >Loading...</p>
+
+
+  <div id="spinner" class="inline-block h-20 w-20 " role="status">
+    <img src="img/logo2-01 tabs-02.png" class="animate-ping">
   </div>
 
-  
-<div id="content" class="hidden">
+
+<div id="content" class="flex-grow basis-auto hidden">
 <!-- mode -->
 <div class="relative" data-te-dropdown-position="dropup">
   <button
@@ -104,8 +121,141 @@
 
 <section>
   <nav
-  class="flex-no-wrap relative flex w-full items-center justify-between bg-[#FBFBFB] py-2 shadow-md shadow-black/5 dark:bg-neutral-600 dark:shadow-black/10 lg:flex-wrap lg:justify-start lg:py-4">
-  <div class="flex w-full flex-wrap items-center justify-between px-3">
+  class="relative w-full items-center justify-between bg-[#FBFBFB] py-2 shadow-md shadow-black/5 dark:bg-neutral-600 dark:shadow-black/10 lg:flex-wrap lg:justify-start lg:py-4">
+  <div class="flex w-full flex-wrap basis-[100%] items-center justify-between px-3">
+
+    <!-- Right elements -->
+    <div class="absolute flex items-center px-2 gap-4 lg:top-2 top-1 right-0 ">
+    
+      <!-- Button trigger vertically centered modal-->
+      <button
+        type="button"
+        class="inline-block rounded bg-primary px-2 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+        data-te-toggle="modal"
+        data-te-target="#exampleModalCenter"
+        data-te-ripple-init
+        data-te-ripple-color="light">
+        Contact me
+      </button>
+  
+    <!--Vertically centered modal-->
+    <div
+      data-te-modal-init
+      class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+      id="exampleModalCenter"
+      tabindex="-1"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-modal="true"
+      role="dialog">
+      <div
+        data-te-modal-dialog-ref
+        class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]">
+        <div
+          class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-lg outline-none dark:bg-neutral-600">
+          <div
+            class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
+            <!--Modal title-->
+            <h5
+              class="text-xl font-medium leading-normal text-neutral-800 dark:text-neutral-200"
+              id="exampleModalCenterTitle">
+              Contact me
+            </h5>
+            <!--Close button-->
+            <button
+              type="button"
+              class="box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
+              data-te-modal-dismiss
+              aria-label="Close">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-6 w-6">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+    
+<!--Modal body-->
+<div class="relative mx-4">
+<!-- Container for demo purpose -->
+<div class="pt-2" id="Contact1">
+<!-- Section: Design Block -->
+<section class="mt-4 lg:mb-4 lg:mt-4 px-6">
+  <div class="flex">
+    <div class="mb-12 w-full md:px-3 lg:mb-0 md:w-full lg:w-full lg:px-6">
+      <form  action="https://formspree.io/f/mknlkdzq"
+      method="POST">
+        <div class="relative mb-6" data-te-input-wrapper-init>
+          <input type="text" name="message"
+            class="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+            id="exampleInput90" placeholder="Name" />
+          <label
+            class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
+            for="exampleInput90"> Name
+          </label>
+        </div>
+        <div class="relative mb-6" data-te-input-wrapper-init>
+          <input type="email" name="email"
+            class="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+            id="exampleInput91" placeholder="Email address" />
+          <label
+            class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
+            for="exampleInput91">Email address
+          </label>
+        </div>
+        <div class="relative mb-6" data-te-input-wrapper-init>
+          <textarea 
+          name="message"
+            class="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+            id="exampleFormControlTextarea1" rows="3" placeholder="Your message"></textarea>
+          <label for="exampleFormControlTextarea1"
+            class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary">Message</label>
+        </div>
+        <button type="submit" data-te-ripple-init data-te-ripple-color="light"
+          class="mb-6 inline-block w-full rounded bg-blue-900 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
+          Send
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+<!-- Section: Design Block -->
+</div>
+<!-- Container for demo purpose -->
+          </div>
+   <!--Modal footer-->
+          <div
+            class="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
+            <button
+              type="button"
+              class="inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200"
+              data-te-modal-dismiss
+              data-te-ripple-init
+              data-te-ripple-color="light">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second dropdown container -->
+    <div class="relative">
+      <img
+          src="./img/avater.png"
+          class="rounded-full"
+          style="height: 25px; width: 25px"
+          alt=""
+          loading="lazy" />
+      </div>
+</div>
+
     <!-- Hamburger button for mobile view -->
     <button
       class="block border-0 bg-transparent px-2 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
@@ -163,7 +313,7 @@
         <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
           <a
             class="text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-            href="#P!"
+            href="#Projects"
             data-te-nav-link-ref
             >Portfolio</a
           >
@@ -172,7 +322,7 @@
         <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
           <a
             class="scroll-smooth text-neutral-500 transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 disabled:text-black/30 motion-reduce:transition-none dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
-            href="#About1"
+            href="#About"
             data-te-nav-link-ref
             >About</a
           >
@@ -180,166 +330,8 @@
       </ul>
     </div>
 
-    <!-- Right elements -->
-    <div class="relative flex items-center px-2 gap-4 ">
-       
-        <!-- Button trigger vertically centered modal-->
-        <button
-          type="button"
-          class="inline-block rounded bg-primary px-2 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
-          data-te-toggle="modal"
-          data-te-target="#exampleModalCenter"
-          data-te-ripple-init
-          data-te-ripple-color="light">
-          Contact me
-        </button>
-    
-      <!--Vertically centered modal-->
-      <div
-        data-te-modal-init
-        class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
-        id="exampleModalCenter"
-        tabindex="-1"
-        aria-labelledby="exampleModalCenterTitle"
-        aria-modal="true"
-        role="dialog">
-        <div
-          data-te-modal-dialog-ref
-          class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]">
-          <div
-            class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-lg outline-none dark:bg-neutral-600">
-            <div
-              class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
-              <!--Modal title-->
-              <h5
-                class="text-xl font-medium leading-normal text-neutral-800 dark:text-neutral-200"
-                id="exampleModalCenterTitle">
-                Contact me
-              </h5>
-              <!--Close button-->
-              <button
-                type="button"
-                class="box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
-                data-te-modal-dismiss
-                aria-label="Close">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="h-6 w-6">
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-            </div>
-      
-<!--Modal body-->
-<div class="relative mx-4">
-<!-- Container for demo purpose -->
-<div class="pt-2" id="Contact1">
-  <!-- Section: Design Block -->
-  <section class="mt-4 lg:mb-4 lg:mt-4 px-6">
-    <div class="flex">
-      <div class="mb-12 w-full md:px-3 lg:mb-0 md:w-full lg:w-full lg:px-6">
-        <form  action="https://formspree.io/f/mknlkdzq"
-        method="POST">
-          <div class="relative mb-6" data-te-input-wrapper-init>
-            <input type="text" name="message"
-              class="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-              id="exampleInput90" placeholder="Name" />
-            <label
-              class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
-              for="exampleInput90"> Name
-            </label>
-          </div>
-          <div class="relative mb-6" data-te-input-wrapper-init>
-            <input type="email" name="email"
-              class="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-              id="exampleInput91" placeholder="Email address" />
-            <label
-              class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
-              for="exampleInput91">Email address
-            </label>
-          </div>
-          <div class="relative mb-6" data-te-input-wrapper-init>
-            <textarea 
-            name="message"
-              class="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-              id="exampleFormControlTextarea1" rows="3" placeholder="Your message"></textarea>
-            <label for="exampleFormControlTextarea1"
-              class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary">Message</label>
-          </div>
-          <button type="submit" data-te-ripple-init data-te-ripple-color="light"
-            class="mb-6 inline-block w-full rounded bg-blue-900 px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
-            Send
-          </button>
-        </form>
-      </div>
-    </div>
-  </section>
-  <!-- Section: Design Block -->
 </div>
-<!-- Container for demo purpose -->
-            </div>
-     <!--Modal footer-->
-            <div
-              class="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
-              <button
-                type="button"
-                class="inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200"
-                data-te-modal-dismiss
-                data-te-ripple-init
-                data-te-ripple-color="light">
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Second dropdown container -->
-      <div class="relative">
-        <img
-            src="./img/avater.png"
-            class="rounded-full"
-            style="height: 25px; width: 25px"
-            alt=""
-            loading="lazy" />
-        </div>
-  </div>
 </nav>
-
-<span class="[&>svg]:absolute [&>svg]:-z-10 [&>svg]:hidden [&>svg]:h-[560px] [&>svg]:w-full [&>svg]:lg:block">
-  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none"
-    class="absolute top-[60px] hidden h-[580px] w-full transition-opacity duration-300 dark:opacity-0 lg:block">
-    <defs>
-      <linearGradient id="sw-gradient-light" x1="0" x2="0" y1="1" y2="0">
-        <stop stop-color="hsl(209, 92.2%, 92.1%)" offset="0%"></stop>
-        <stop stop-color="hsl(209, 92.2%, 99.1%)" offset="100%"></stop>
-      </linearGradient>
-    </defs>
-    <path fill="url(#sw-gradient-light)"
-      d="M -0.664 3.46 C -0.664 3.46 405.288 15.475 461.728 21.285 C 601.037 35.625 672.268 76.086 701.056 97.646 C 756.056 138.838 797.267 216.257 857.745 245.156 C 885.704 258.516 980.334 280.547 1048.511 268.826 C 1121.622 256.256 1199.864 226.267 1214.176 220.176 C 1241.273 208.643 1280.201 191.509 1343.494 179.436 C 1434.325 162.111 1439.504 196.099 1439.503 183.204 C 1439.502 161.288 1440 0 1440 0 L 1360 0 C 1280 0 1120 0 960 0 C 800 0 640 0 480 0 C 320 0 160 0 80 0 L 0 0 L -0.664 3.46 Z">
-    </path>
-  </svg>
-  <svg data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none"
-    class="absolute top-[60px] hidden h-[580px] w-full opacity-0 transition-opacity duration-300 dark:opacity-100 lg:block">
-    <defs>
-      <linearGradient id="sw-gradient-dark" x1="0" x2="0" y1="1" y2="0">
-        <stop stop-color="hsl(240, 4%, 28%)" offset="0%"></stop>
-        <stop stop-color="hsl(0, 0%, 15%)" offset="100%"></stop>
-      </linearGradient>
-    </defs>
-    <path fill="url(#sw-gradient-dark)"
-      d="M -0.664 3.46 C -0.664 3.46 405.288 15.475 461.728 21.285 C 601.037 35.625 672.268 76.086 701.056 97.646 C 756.056 138.838 797.267 216.257 857.745 245.156 C 885.704 258.516 980.334 280.547 1048.511 268.826 C 1121.622 256.256 1199.864 226.267 1214.176 220.176 C 1241.273 208.643 1280.201 191.509 1343.494 179.436 C 1434.325 162.111 1439.504 196.099 1439.503 183.204 C 1439.502 161.288 1440 0 1440 0 L 1360 0 C 1280 0 1120 0 960 0 C 800 0 640 0 480 0 C 320 0 160 0 80 0 L 0 0 L -0.664 3.46 Z">
-    </path>
-  </svg>
-</span>
-<!-- SVG Background -->
 
 <!-- alert -->
 <section>
@@ -347,9 +339,8 @@
     role="alert"
     data-te-alert-init
     data-te-alert-show>
-    <h1 class="text-center">
-    <strong class="mr-2"> 50%! </strong> All designs if you like
-     and share on my Social media .</h1>
+    <h1 class="text-center"> All designs if you like
+     and share on my Social media . 50%!!!!!!!!!!!!!!!!!!!!!!!!!!!</h1>
     <button
       type="button"
       class="ml-auto box-content rounded-none border-none p-1 dark:text-warning-900 text-white opacity-50 hover:text-warning-200 hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
@@ -370,41 +361,42 @@
       </span>
     </button>
   </div>
-  </section>
+  </section> 
 
-<!-- Jumbotron -->
-<div class="px-6 pt-4 lg:py-28 text-center md:px-12 lg:text-left">
-  <div class="w-100 mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl xl:px-32">
-    <div class="grid items-center lg:grid-cols-2">
-      <div class="mb-12 md:mt-12 lg:mt-0 lg:mb-0">
-        <div
-          class="block rounded-lg bg-[hsla(0,0%,100%,0.55)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 md:px-12 lg:-mr-14 backdrop-blur-[30px]">
-          <h1 class="mb-10 text-5xl font-bold md:text-6xl xl:text-5xl dark:text-white">
-            Ismaeels <br /><span class="text-primary">Graphic Design Portfolio</span>
-          </h1>
-          <div class="gap-4">
-            <button class="disabled:pointer-events-auto inline-block bg-primary rounded-md px-10 py-2 text-xs font-medium uppercase text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
-              View my work
-               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="animate-pulse inline-block w-8 h-8">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-        <div class="inline-block mb-12 lg:mb-0">
-          <img src="./img/The-Complementary-Relationship-Between-Instructional-Design-And-Graphic-Design.png"
-            class="w-full rounded-lg shadow-lg dark:shadow-black/20" alt="" />
+  <!-- hero section -->
+<!-- Video Background -->
+<div class="video-container ">
+    <video autoplay loop muted playsinline>
+      <source src="./img/COMP.mp4" type="video/MP4">
+      <!-- Add other video sources if needed -->
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <section class="w-full h-full" style="background-image:url(./img/ ) ; ">
+      
+ <div class="w-100 mx-auto px-6 sm:max-w-2xl md:max-w-3xl md:px-12 lg:max-w-36 xl:max-w-4xl xl:px-32"
+ >
+    <div class="text-center">
+      <div
+        class="block rounded-lg bg-gray-600 bg-opacity-70 px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,15%,0.8)] dark:shadow-black/20 md:py-16 md:px-12"
+        style="
+            margin-top: 95px;
+            margin-bottom: 95px;
+            backdrop-filter: saturate(200%) blur(25px);
+          ">
+        <h1 class="text-white mb- text-3xl font-bold tracking-tight md:text-4xl xl:text-5xl animate-[fade-in_1s_ease-in-out]">
+         Welcome to IJ-DESIGNS<br /><span class="text-primary dark:text-primary-700">Portfolio of ismaeel Jansen</span>
+        </h1>
       </div>
     </div>
   </div>
-</div>
 </section>
 
 <!-- about me -->
-<section class="rounded-md p-6 text-center shadow-lg md:p-12 md:text-left"
-  style="background-image: url(./img/bg\ avater-01-01.png)">
-   <h4 id="About1" class="text-center mb-6 mt-2 text-5xl font-bold drop-shadow-xl text-white dark:text-white">
+<section class=" p-6 text-center shadow-lg md:p-12 md:text-left"
+  style="background-image: url(./img/bg\ avater-01-01.png);  background-repeat: no-repeat; background-size: cover;">
+   <h4 id="About" class="text-center mb-6 mt-2 text-5xl font-bold drop-shadow-xl text-white dark:text-white">
       About me
     </h4>
     <div class="flex justify-center">
@@ -444,7 +436,7 @@
 <!-- portfolio --> 
 <section class="container mx-auto px-4">
 
-  <h4 id="P!" class="text-center mb-10 mt-10 text-5xl font-bold drop-shadow-xl text-black dark:text-white">
+  <h4 id="Projects" class="text-center mb-10 mt-10 text-5xl font-bold drop-shadow-xl text-black dark:text-white">
     Projects
   </h4>
 
@@ -640,7 +632,7 @@
 
 
 <!-- Footer -->
-<footer class="bg-gray-800 text-white py-4">
+<footer id="#section2" class="bg-gray-800 text-white py-4">
         <div class="container mx-auto text-center">
             <p>&copy; 2023@Ismaeel Jansen.</p>
         </div>
@@ -656,9 +648,7 @@
   type="text/javascript"
   src="./js/darkmode/darkmode.js"></script>
 
-  <script
-  type="text/javascript"
-  src="./js/spinner/spinnerjs.js"></script>
+
 
 
 </body>
