@@ -6,6 +6,7 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    safelist: ['animate-[fade-in-left]']
   },
   plugins: [require("./node_modules/tw-elements/dist/plugin.cjs")],
   darkMode:'class'
