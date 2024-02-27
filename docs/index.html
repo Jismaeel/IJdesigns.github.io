@@ -244,10 +244,17 @@
       <h4 id="About" class="text-warning-500 font-mono text-center text-3xl py-4 font-bold">
         About me
       </h4>
-      <div class="flex justify-center">
+      <div 
+      data-te-animation-init
+      data-te-animation-start="onScroll"
+      data-te-animation-reset="false"
+      data-te-animation="[fade-in_1s_ease-in-out]" 
+      class="flex justify-center">
         <div class="md:flex md:flex-row">
-          <div class="mx-auto mb-6 flex w-36 items-center justify-center md:mx-0 md:w-96 lg:mb-0">
-            <img src="./img/avater.png" class="rounded-full shadow-md" alt="Ismaeel" />
+          <div
+          class="mx-auto mb-6 flex w-36 items-center justify-center md:mx-0 md:w-96 lg:mb-0">
+            <img
+             src="./img/avater.png" class="rounded-full shadow-md" alt="Ismaeel" />
           </div>
           <div class="md:ml-6">
             <p class="mb-6 font-bold text-neutral-500 :text-neutral-300">
@@ -278,7 +285,7 @@
         </h4>
 
         <div class="px-2 py-2 lg:px-10 lg:pt-12">
-          <div data-te-lightbox-init class="-m-1 flex flex-wrap md:-m-2">
+          <div data-te-lightbox-init class=" flex flex-wrap">
             <div class="flex w-1/3">
               <div class="w-full p-1 md:p-2">
                 <img
@@ -329,7 +336,7 @@
       <h1 id="Projects" class="text-center text-black font-mono mb-2 mt-10 text-3xl font-bold drop-shadow-xl">
         Reels
       </h1>
-      <div class="grid gap-4 lg:gap-0 lg:grid-cols-2 px-6 mb-12">
+      <div class="grid gap-4 lg:gap-4 lg:grid-cols-2 px-6 mb-12">
         <div class="embed-responsive embed-responsive-21by9 relative w-full overflow-hidden"
           style="padding-top: 42.857143%">
           <iframe class="embed-responsive-item absolute bottom-0 left-0 right-0 top-0 h-full w-full"

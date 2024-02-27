@@ -70,5 +70,12 @@ function simulateAsyncOperation() {
 // Call the function to start the process
 simulateAsyncOperation();
 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
 
-
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
